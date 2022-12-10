@@ -14,8 +14,11 @@ employees = employees.map(changeAgeToNumber);
 employees.forEach(increaseAge);
 employees.forEach(addToList);
 
-// using spread operator to copy
-const employeesCopy = [...employees];
+// using spread operator to add new object
+employees = [
+  ...employees,
+  { id: 4, name: "jamie", age: "21", profession: "admin" },
+];
 
 filterButton.addEventListener("click", filterByProfession);
 toggleButton.addEventListener("click", changeTheme);
