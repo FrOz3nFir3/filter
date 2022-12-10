@@ -5,6 +5,7 @@ body{
     font-family: sans-serif;
     background: var(--bg);
     color: var(--fg);
+    padding: 2em;
 }
 /* utility classes */
 .bg-dark{
@@ -35,6 +36,13 @@ li{
 
 span{
     margin-left: 2em;
+}
+
+@media (max-width: 500px){
+    span{
+        margin-left: 1em;
+        display: block;
+    }
 }
 select, button{
     font-size: 1.2em;
